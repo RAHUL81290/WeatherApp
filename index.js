@@ -1,6 +1,5 @@
 var inputText=document.querySelector(".textinput")
 document.querySelector("i").addEventListener("click",function(event){
-  if(event)
     fetch("https://api.openweathermap.org/data/2.5/weather?appid=8f308be14ad56d744ced1724ec39b82d&units=metric&q="+inputText.value)
         .then((response) => {
           return response.json();
